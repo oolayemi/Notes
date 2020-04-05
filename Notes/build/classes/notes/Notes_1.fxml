@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="538.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="notes.notesController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="538.0" style="-fx-background-color: #847a92;">
+         <children>
+            <Label layoutX="207.0" layoutY="8.0" text="New Notes">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="no_notes_pane" layoutY="52.0" prefHeight="523.0" prefWidth="538.0">
+         <children>
+            <JFXTextArea layoutX="12.0" layoutY="85.0" prefHeight="429.0" prefWidth="515.0" promptText="  Note Content" style="-fx-background-color: #fff;">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="add_new_notes" alignment="BOTTOM_RIGHT" buttonType="RAISED" layoutX="458.0" layoutY="444.0" onAction="#addNewNotes" prefWidth="57.0" ripplerFill="BLACK" style="-fx-background-color: #007acc;" text="+">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField layoutX="12.0" layoutY="20.0" prefHeight="50.0" prefWidth="515.0" promptText="  Note Title" style="-fx-background-color: #fff;">
+               <font>
+                  <Font name="System Italic" size="25.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
